@@ -60,6 +60,17 @@ Route::get( '/', array(
 ) );
 
 
+Route::get('/pages/{url_seo}', 'PagesController@show');
+
+Route::get('/articulos/{url_seo}', 'ArticulosController@show');
+
+
+// Route::get('/', array('as' => 'home', 'uses' => 'ArticulosController@index'));
+
+Route::get('/mascotas/{id}', 'ArticulosController@categorias');
+
+
+
 
 
 # Standard User Routes
@@ -111,16 +122,3 @@ Route::group(['before' => 'auth|standardUser'], function()
 
 
 });
-
-Route::get('/pages/{url_seo}', 'PagesController@show');
-
-Route::get('/articulos/show/{url_seo}', 'ArticulosController@show');
-Route::get('/articulo/{url_seo}', 'ArticulosController@show');
-
-Route::get('/', array('as' => 'home', 'uses' => 'ArticulosController@index'));
-
-Route::get('/mascotas/{id}', 'ArticulosController@categorias');
-
-
-
-// Route::resource('clasificadoscategorias', 'ClasificadoscategoriasController');

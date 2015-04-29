@@ -64,6 +64,7 @@ Route::get('/pages/{url_seo}', 'PagesController@show');
 
 
 Route::get('/articulo/{url_seo}', 'ArticulosController@show');
+Route::get('/articulos/{url_seo}', 'ArticulosController@show');
 
 // Route::get('/', array('as' => 'home', 'uses' => 'ArticulosController@index'));
 

@@ -15,7 +15,7 @@ class ArticulosController extends BaseController {
         $articulos_tapa = DB::table('articulos')
 													->where('estado', '=', 'publicado')
 													->where('categorias_id', '=', 6)
-													->orderBy('id', 'desc')->paginate(3);
+													->orderBy('id', 'desc')->paginate(5);
 
 				$articulos = DB::table('articulos')
 													->where('estado', '=', 'publicado')

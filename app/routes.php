@@ -84,6 +84,7 @@ Route::group(['before' => 'auth|standardUser'], function()
 		Route::get('/articulos/ver', 'ArticulosController@ver');
 		Route::get('/articulos/{id}/delete', 'ArticulosController@destroy');
 		Route::get('/articulos/{id}/publicar', 'ArticulosController@publicar');
+		Route::get('/articulos/{id}/nuevo', 'ArticulosController@nuevo');
 
 		Route::get('/articulos/{id}/archivos/{padre}', 'ArchivosController@index');
 

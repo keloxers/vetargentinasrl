@@ -249,6 +249,15 @@ public function publicar($id)
 	return Redirect::to('/articulos/ver');
 }
 
+public function nuevo($id)
+{
+
+	$articulo = Articulo::find($id);
+	$articulo->estado = 'nuevo';
+	$articulo->save();
+
+	return Redirect::to('/articulos/ver');
+}
 
 
 

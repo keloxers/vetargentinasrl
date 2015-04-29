@@ -13,7 +13,7 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
 		<!-- Navigation -->
@@ -187,5 +187,8 @@
 		<script src="/js/jquery.stellar.min.js"></script>
 		<script src="/js/ekkoLightbox.js"></script>
 		<script src="/js/custom.js"></script>
+
+
+
 	</body>
 </html>

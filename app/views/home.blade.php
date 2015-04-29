@@ -102,7 +102,7 @@
 											</a>
 											<div class="title">
 												<h5>
-													<span data-hover="{{ $articulo->articulo }}">{{ $articulo->articulo }}</span>
+													<span>{{ $articulo->articulo }}</span>
 												</h5>
 											</div>
 

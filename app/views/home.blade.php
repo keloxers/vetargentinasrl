@@ -104,18 +104,42 @@
 							<!-- Adoption end -->
 
 
+							<!-- Services -->
+									<div class="container">
+										<div class="row">
+											<div class="col-md-12 centered">
+												<h3><span>Promociones</span></h3>
+												<p>Disfruta de nuestras mejores promociones.</p>
+											</div>
+										</div>
+									</div>
+									<!-- Services end -->
+
+
 							<!-- Carousel -->
 									<div id="c-carousel">
 										<div id="wrapper">
 											<div id="carousel">
 
 
-												<div>
-													<a href="images/dog-1.png" title="Dog" data-hover="Sandy the west highland terrier" data-toggle="lightbox" class="lightbox">
-														<img src="images/dog-1.png" alt="Dog" />
-													</a>
-												</div>
 
+
+												@foreach ($articulos_promociones as $articulos_promocion)
+
+												<?php
+														$archivos = DB::table('archivos')
+														->where('padre', '=', 'articulo')
+														->where('padre_id', '=', $articulo->id)
+														->first();
+												?>
+
+														<div>
+															<a href="/articulos/{{ $articulos_promocion->url_seo }}" title="" data-hover="{{ $articulo->articulo }}">
+																<img src="/uploads/crop/{{ $archivos->archivo }}" alt="" />
+															</a>
+														</div>
+
+												@endforeach
 
 											</div>
 											<div id="pager" class="pager"></div>

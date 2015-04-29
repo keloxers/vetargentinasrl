@@ -22,13 +22,14 @@ class ArticulosController extends BaseController {
 													->where('categorias_id', '=', 1)
 													->orderBy('id', 'desc')->paginate(12);
 
-				$articulos_masvistos = DB::table('articulos')
+				$articulos_promociones = DB::table('articulos')
 													->where('estado', '=', 'publicado')
+													->where('categorias_id', '=', 5)
 													->orderBy('visitas', 'desc')
 													->orderBy('created_at', 'desc')
-													->paginate(4);
+													->paginate(12);
 
-        return View::make('home', array('articulos_tapa' => $articulos_tapa, 'articulos' => $articulos, 'articulos_masvistos' => $articulos_masvistos));
+        return View::make('home', array('articulos_tapa' => $articulos_tapa, 'articulos' => $articulos, 'articulos_promociones' => $articulos_promociones));
 
 	}
 

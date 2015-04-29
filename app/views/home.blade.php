@@ -134,7 +134,7 @@
 												?>
 
 														<div>
-															<a href="/articulos/{{ $articulos_promocion->url_seo }}" title="" data-hover="{{ $articulo->articulo }}">
+															<a href="/articulos/{{ $articulos_promocion->url_seo }}" title="" data-hover="{{ $articulos_promocion->articulo }}">
 																<img src="/uploads/crop/{{ $archivos->archivo }}" alt="" />
 															</a>
 														</div>

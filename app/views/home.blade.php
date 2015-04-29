@@ -129,7 +129,7 @@
 												<?php
 														$archivos = DB::table('archivos')
 														->where('padre', '=', 'articulo')
-														->where('padre_id', '=', $articulo->id)
+														->where('padre_id', '=', $articulos_promocion->id)
 														->first();
 												?>
 

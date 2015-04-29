@@ -102,7 +102,13 @@
 												    echo "<td>" . $articulo->estado . "</td>";
 														echo "<td>" ;
 
-														echo "<a href='/articulos/" . $articulo->id . "/publicar' class='btn'>Publicar</a> ";
+														if ($articulo->estado == "nuevo") {
+															echo "<a href='/articulos/" . $articulo->id . "/publicar' class='btn'>Publicar</a> ";
+														} else {
+															echo "<a href='/articulos/" . $articulo->id . "/nuevo' class='btn'>Nuevo</a> ";
+														}
+
+
 														echo "<a href='/articulos/" . $articulo->id . "/edit' class='btn'>Editar</a> ";
 														echo "<a href='/articulos/" . $articulo->id . "/archivos/articulo' class='btn'>Archivos</a> ";
 														echo "<a href='/articulos/" . $articulo->id . "/delete' class='btn'>Eliminar</a> ";

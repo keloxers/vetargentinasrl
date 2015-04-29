@@ -59,7 +59,7 @@
 														$categoria = Categoria::find($articulo->categorias_id);
 											?>
 
-											<a href="/artoculos/{{ $articulo->url_seo }}" title="">
+											<a href="/articulos/{{ $articulo->url_seo }}" title="">
 												@if (count($archivos)>0 )
 														<img src="/uploads/crop/{{ $archivos->archivo }}" alt="{{ $articulo->articulo }}" />
 												@endif

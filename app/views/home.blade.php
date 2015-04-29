@@ -102,4 +102,27 @@
 
 							</div>
 							<!-- Adoption end -->
+
+
+							<!-- Carousel -->
+									<div id="c-carousel">
+										<div id="wrapper">
+											<div id="carousel">
+
+
+												<div>
+													<a href="images/dog-1.png" title="Dog" data-hover="Sandy the west highland terrier" data-toggle="lightbox" class="lightbox">
+														<img src="images/dog-1.png" alt="Dog" />
+													</a>
+												</div>
+
+
+											</div>
+											<div id="pager" class="pager"></div>
+										</div>
+									</div>
+									<!-- Carousel end -->
+
+
+
 @stop

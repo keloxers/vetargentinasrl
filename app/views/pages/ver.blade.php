@@ -2,30 +2,40 @@
 
 @section('content')
 
+<body class="contentpage">
 
-<!-- Testimonials -->
-		<div class="testimonials" data-stellar-background-ratio="0.6">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 centered">
-						<!-- Slider -->
-						<div id="home_testimonial" class="carousel slide" data-ride="carousel">
 
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
+	  <!-- Testimonials -->
+	  		<div class="testimonials" data-stellar-background-ratio="0.6">
+	  			<div class="container">
+	  				<div class="row">
+	  					<div class="col-md-12 centered">
+	  						<!-- Slider -->
+	  						<div id="home_testimonial" class="carousel slide" data-ride="carousel">
 
-								</div>
-							</div>
-						</div>
-						<!-- Slider end -->
+	  							<!-- Wrapper for slides -->
+	  							<div class="carousel-inner">
+	  								<div class="item active">
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Testimonials end -->
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<!-- Slider end -->
 
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!-- Testimonials end -->
+
+
+
+
+
+<!-- Contact -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 left">
 
 
 
@@ -120,8 +130,8 @@
 
 		?>
 
+	</div>
 </div>
 </div>
-</div>
-
+</body>
 @stop

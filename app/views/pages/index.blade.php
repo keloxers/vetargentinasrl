@@ -1,27 +1,51 @@
 @extends('layouts.default')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="/css/tables.css"/>
+<body class="contentpage">
 
 
-<div id="page"><!-- - - - - - - - - - SECTION - - - - - - - - - -->
-<div class="pi-section-w pi-section-white piTooltips">
-	<div class="pi-section pi-padding-bottom-80">
+	  <!-- Testimonials -->
+	  		<div class="testimonials" data-stellar-background-ratio="0.6">
+	  			<div class="container">
+	  				<div class="row">
+	  					<div class="col-md-12 centered">
+	  						<!-- Slider -->
+	  						<div id="home_testimonial" class="carousel slide" data-ride="carousel">
 
-		<div class="pi-text-center">
-			<h1 class="pi-uppercase pi-weight-700 pi-has-border pi-has-tall-border pi-has-short-border pi-margin-bottom-70">
-				{{ $title }}
-			</h1>
-		</div>
+	  							<!-- Wrapper for slides -->
+	  							<div class="carousel-inner">
+	  								<div class="item active">
 
-<a href='/pages/create' class='btn pi-btn-orange pi-btn-small'>Crear nueva pagina</a><br>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<!-- Slider end -->
+
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!-- Testimonials end -->
+
+
+
+
+
+<!-- Contact -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 left">
+
+
+
+<a href='/pages/create' class='btn'>Crear nueva pagina</a><br>
 
 <?php if (count($pages)>0 )  { ?>
 
 
 
 
-									<table class="pi-table pi-table-hovered pi-table-zebra">
+									<table border=1>
 
 										<thead>
 
@@ -42,10 +66,10 @@
 												        echo "<td>" . $page->page . "</td>";
 												        echo "<td align='center'>" ;
 
-														echo "<a href='/pages/" . $page->id . "/edit' class='btn pi-btn-orange pi-btn-small'>Editar</a> ";
+														echo "<a href='/pages/" . $page->id . "/edit' class='btn'>Editar</a> ";
 
-														echo "<a href='/pages/" . $page->url_seo . "' class='btn pi-btn-orange pi-btn-small'>Ver</a> ";
-														echo "<a href='/pages/" . $page->id . "/delete' class='btn pi-btn-orange pi-btn-small'>Eliminar</a> ";
+														echo "<a href='/pages/" . $page->url_seo . "' class='btn'>Ver</a> ";
+														echo "<a href='/pages/" . $page->id . "/delete' class='btn'>Eliminar</a> ";
 
 														print "</td>";
 														print "</tr>";
@@ -68,8 +92,8 @@
 		?>
 
 
+	</div>
 </div>
 </div>
-</div>
-
+</body>
 @stop

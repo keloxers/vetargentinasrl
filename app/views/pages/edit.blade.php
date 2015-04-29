@@ -2,6 +2,41 @@
 
 @section('content')
 
+<body class="contentpage">
+
+
+	  <!-- Testimonials -->
+	  		<div class="testimonials" data-stellar-background-ratio="0.6">
+	  			<div class="container">
+	  				<div class="row">
+	  					<div class="col-md-12 centered">
+	  						<!-- Slider -->
+	  						<div id="home_testimonial" class="carousel slide" data-ride="carousel">
+
+	  							<!-- Wrapper for slides -->
+	  							<div class="carousel-inner">
+	  								<div class="item active">
+
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<!-- Slider end -->
+
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!-- Testimonials end -->
+
+
+
+
+
+<!-- Contact -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 left">
+
 
 
 
@@ -144,8 +179,8 @@
 
           <!-- Submit button -->
           <p>
-            <button type="submit" class="btn pi-btn-base pi-btn-big pi-uppercase pi-weight-700 pi-letter-spacing">
-              <i class="icon-check pi-icon-left"></i>Editar
+            <button type="submit" class="btn">
+              Editar
             </button>
           </p>
           <!-- End submit button -->
@@ -157,8 +192,10 @@
       <!-- End col 6 -->
 
 
+    </div>
   </div>
 </div>
+</body>
 <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
 
 

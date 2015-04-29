@@ -3,15 +3,33 @@
 
 
 
+  <!-- Testimonials -->
+  		<div class="testimonials" data-stellar-background-ratio="0.6">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12 centered">
+  						<!-- Slider -->
+  						<div id="home_testimonial" class="carousel slide" data-ride="carousel">
+
+  							<!-- Wrapper for slides -->
+  							<div class="carousel-inner">
+  								<div class="item active">
+
+  								</div>
+  							</div>
+  						</div>
+  						<!-- Slider end -->
+
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<!-- Testimonials end -->
+
+
+
+
 <body class="contentpage">
-		<!-- Contact -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 centered">
-				</div>
-			</div>
-		</div>
-		<!-- Contact end -->
 
 
 		<!-- Contact -->

@@ -14,7 +14,7 @@ class ArticulosController extends BaseController {
 
         $articulos_tapa = DB::table('articulos')
 													->where('estado', '=', 'publicado')
-													->where('tipo', '=', 'principal')
+													->where('categorias_id', '=', 6)
 													->orderBy('id', 'desc')->paginate(3);
 
 				$articulos = DB::table('articulos')
@@ -78,7 +78,7 @@ public function ver()
 		$rules = [
 			'articulo' => 'required',
 			'copete' => 'required',
-			'texto' => 'required',
+
 		];
 
 

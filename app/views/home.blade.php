@@ -2,6 +2,8 @@
 @section('content')
 
 
+@if (count($articulos_tapa) > 0)
+
 <!-- Slider -->
 		<div id="home_carousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -12,20 +14,38 @@
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
-				<div class="item active">
-					<img src="/images/2.png" alt="" />
-					<div class="carousel-caption">
-						<h2>Los adoramos</h2>
-					    <p>Somos una clínica veterinaria que contamos con una experiencia de 25 años que se preocupa por la salud y el bienestar de su mascota ofreciéndole una gran atención y un buen trato, con los más altos rendimientos en tecnología para la atención médica de su mascota contamos con los mejores médicos veterinarios que les ofrecerá la mejor atención.</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="/images/3.png" alt="" />
-					<div class="carousel-caption">
-						<h2>Tambien a ellos</h2>
-					    <p>Manejo especializado de oftalmología y cirugía de tejidos blandos en pequeños animales. Trece años de experiencia en docencia, vinculado con varias universidades, desarrollando cátedras de cirugía general y rotación en pequeños animales. Habilidades con los caballos: manejo, reproducción, cirugía.</p>
-					</div>
-				</div>
+
+				<?php $primero=true; ?>
+
+				@foreach ($articulos_tapa as $articulo)
+
+						<?php
+							if ($primero) {
+								$isactives = " active";
+								$primero=false;
+							} else {
+								$isactives = "";
+							}
+
+							$archivos = DB::table('archivos')
+							->where('padre', '=', 'articulo')
+							->where('padre_id', '=', $articulo->id)
+							->first();
+
+
+
+						?>
+
+						<div class="item{{$isactives}}">
+							<img src="/uploads/big/{{ $archivos->archivo }}" alt="" />
+							<div class="carousel-caption">
+								<h2>{{ $articulo->articulo }}</h2>
+							    <p>{{ $articulo->copete }}</p>
+							</div>
+						</div>
+
+				@endforeach
+
 			</div>
 
 			<!-- Controls -->
@@ -39,8 +59,9 @@
 		<!-- Slider end -->
 
 
+		@endif
 
-
+		@if (count($articulos) > 0)
 
 					<!-- Adoption -->
 							<div class="container">
@@ -103,6 +124,10 @@
 							</div>
 							<!-- Adoption end -->
 
+				@endif
+
+
+				@if (count($articulos_promociones) > 0)
 
 							<!-- Services -->
 									<div class="container">
@@ -147,6 +172,6 @@
 									</div>
 									<!-- Carousel end -->
 
-
+			@endif
 
 @stop

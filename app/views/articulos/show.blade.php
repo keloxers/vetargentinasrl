@@ -54,6 +54,8 @@
 
 									</div>
 									<div class="col-md-7">
+                    Compartir en <a href="http://www.facebook.com/sharer.php?u=http://www.veterinariaargentinasrl.com/articulos/{{$articulo->url_ceo}}" class="facebook"></a>                    
+                    <br>
 										<p>{{$articulo->texto}}</p>
 
 									</div>
